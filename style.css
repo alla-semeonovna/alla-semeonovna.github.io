@@ -1,0 +1,30 @@
+.container {
+    display: grid;
+    row-gap: 1em;
+}
+
+.post {
+    background: #e3e3ef;
+    border-radius: 0.5em;
+}
+
+.imgpost {
+    height: var(--size);
+    display: grid;
+    grid-template-columns: 25% 50%;
+    grid-template-rows: 25%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+ 
+/* .imgtext {
+    padding: 0.3em;
+} */
+
+.imgtxt {
+    word-break:normal;
+}
+
+img {
+    grid-area: 1 / 1 / 2 / 2; 
+}
