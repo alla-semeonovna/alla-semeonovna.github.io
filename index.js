@@ -18,7 +18,6 @@ function place_img_post(content, img_path) {
     }
     
     text.ready(function () {
-        console.log(text.height())
         img.css("--size", text.height()*4)
         img.height(text.height()*4)
     })
@@ -58,7 +57,7 @@ $(function () {
          */
         function (data) {
             for (let i of data.split("\n")) {
-                $.get(`posts/${i}.txt`, place_post)
+                console.log(`Got ${i}.txt with exit code ${$.get(`posts/${i}.txt`, place_post).readyState}`)
             }
         }
     )
